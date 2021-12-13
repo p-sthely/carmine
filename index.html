@@ -32,6 +32,12 @@
             color: var(--bs-dark);
         }
 
+        @media (min-width: 992px) {
+            .navbar-expand-lg .offcanvas {
+                display:  none;
+            }
+        }
+
         /*********************/
         /* custom utilities */
         /*******************/
@@ -40,12 +46,18 @@
         /********/
 
         .fs-hero {
-            font-size: 7rem;
+            font-size: 3rem;
         }
 
-        @media(max-width: 768px) {
+        @media(min-width: 768px) {
             .fs-hero {
-                font-size: 3rem;
+                font-size: 5rem;
+            }
+        }
+
+        @media(min-width: 992px) {
+            .fs-hero {
+                font-size: 7rem;
             }
         }
 
@@ -54,6 +66,12 @@
 
         .mw-50 {
             max-width: 50%;
+        }
+
+        @media(min-width: 768px) {
+            .w-md-75 {
+                width:  75%;
+            }
         }
 
         /* colors */
@@ -72,6 +90,9 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                     <div class="container-fluid py-3">
                         <a class="navbar-brand fs-2 fw-bold" href="#">Carmine</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse justify-content-end">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -105,10 +126,45 @@
                                 <a class="nav-link fs-5" href="#"><i class="bi bi-cart"></i></a>
                             </div>
                         </div>
+                        <div class="offcanvas offcanvas-end vw-100 border-start-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5" href="#">Conférenciers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5" href="#">Calendrier</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5" href="#">Tickets</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5">Blog</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav flex-row justify-content-center flex-grow-1 pe-3">
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link fs-5" href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link fs-5" href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link fs-5" href="#"><i class="bi bi-instagram"></i></a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link fs-5" href="#"><i class="bi bi-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </nav>
                 <div class="container-fluid my-5">
-                    <h1 class="fs-hero fw-bold w-75">Carmine est un nouvel événement dédié aux designers qui pensent
+                    <h1 class="fs-hero fw-bold w-md-75">Carmine est un nouvel événement dédié aux designers qui pensent
                         comme des artistes.</h1>
                     <p class="fs-4 fw-bold my-3">Du 10 au 12 août 2019</p>
                 </div>
