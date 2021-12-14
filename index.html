@@ -34,7 +34,7 @@
 
         @media (min-width: 992px) {
             .navbar-expand-lg .offcanvas {
-                display:  none;
+                display: none;
             }
         }
 
@@ -70,7 +70,7 @@
 
         @media(min-width: 768px) {
             .w-md-75 {
-                width:  75%;
+                width: 75%;
             }
         }
 
@@ -85,13 +85,15 @@
 
 <body>
     <div class="container-fluid bg-yellow">
-        <div class="row row-cols-1">
-            <div class="col debug">
+        <div class="row row-cols-1 gy-5">
+            <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                     <div class="container-fluid py-3">
                         <a class="navbar-brand fs-2 fw-bold" href="#">Carmine</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end">
                             <ul class="navbar-nav">
@@ -126,10 +128,12 @@
                                 <a class="nav-link fs-5" href="#"><i class="bi bi-cart"></i></a>
                             </div>
                         </div>
-                        <div class="offcanvas offcanvas-end vw-100 border-start-0 bg-yellow" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas offcanvas-end vw-100 border-start-0 bg-yellow" tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Carmine</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body d-flex flex-column justify-content-evenly">
                                 <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
@@ -170,11 +174,42 @@
                     <p class="fs-4 fw-bold my-3">Du 10 au 12 août 2019</p>
                 </div>
             </div>
-            <div class="col debug">
-
+            <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 gy-4">
+                    <div class="col col-md-8">
+                        <div class="container-fluid">
+                            <img class="img-fluid bg-light"
+                                src="https://cdn.pixabay.com/photo/2020/06/25/03/42/art-5338368_1280.png"
+                                alt="Art portrait painting digital">
+                        </div>
+                    </div>
+                    <div class="col col-md-4">
+                        <div class="container-fluid">
+                            <p class="lead">
+                                Nous nous sommes rendus à des centaines de conférences sur le design, nous avons été
+                                inspirés par d’innombrables conférenciers et nous avons rencontré de nombreuses
+                                personnes...
+                                mais nous sommes toujours repartis avec l’impression de n’avoir parlé que d’une fraction
+                                de
+                                ce que les designers peuvent faire. Cette conférence a été créée pour remédier à ce
+                                problème.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col debug">
-
+            <div class="col">
+                <div class="container-fluid">
+                    <p class="fs-hero fw-bold">
+                        Du vendredi au dimanche<br>
+                        Du 10 au 12 août 2019
+                    </p>
+                    <span class="fs-hero fw-bold">-</span>
+                    <p class="fs-hero fw-bold">
+                        Brooklyn—NY<br>
+                        Clarkson House
+                    </p>
+                </div>
             </div>
         </div>
     </div>
